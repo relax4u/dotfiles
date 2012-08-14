@@ -1,0 +1,11 @@
+
+" Window 関連
+nmap <C-H> <C-W>h
+nmap <C-J> <C-W>j
+nmap <C-K> <C-W>k
+nmap <C-L> <C-W>l
+
+" Buffer 関連
+nnoremap <C-[>[5C :bn<CR>
+nnoremap <C-[>[5D :bp<CR>
+
