@@ -22,7 +22,9 @@ set clipboard+=autoselect
 set clipboard=autoselect
 
 " Status line
+" fontforge -lang=py -script fontpatcher Ricty-Regular.ttf
+" fontforge -lang=py -script fontpatcher Ricty-Bold.ttf
 set laststatus=2
-" let g:Powerline_symbols = 'fancy'
+let g:Powerline_symbols = 'fancy'
 " set statusline=%n:%f%m%r%h%w%=[%{&fileencoding}:%{&fileformat}][%l,%c(%p)]
 

@@ -7,25 +7,30 @@ if has('vim_starting')
 endif
 
 " Plugins
-NeoBundle 'vim-ruby/vim-ruby'                 " Ruby
-NeoBundle 'rails.vim'                         " Rails
-NeoBundle 'mattn/zencoding-vim'               " Zen-coding
 NeoBundle 'nathanaelkane/vim-indent-guides'   " インデント色付け
 NeoBundle 'Shougo/neocomplcache'              " スニペット保管
-NeoBundle 'scrooloose/nerdcommenter'          " コメント処理
-NeoBundle 'vim-scripts/sudo.vim'              " sudo権限によるファイル修正
 NeoBundle 'Shougo/unite.vim'                  " ファイル操作兼ランチャ
-NeoBundle 'thinca/vim-ref'                    " リファレンス
-NeoBundle 'vim-scripts/YankRing.vim'          " Yank履歴管理
-NeoBundle 'scrooloose/nerdtree'               " エクスプローラ
-NeoBundle 'motemen/git-vim'                   " Git
-NeoBundle 'vim-scripts/grep.vim'              " Grep
-NeoBundle 'vim-scripts/eregex.vim'            " Ruby・Perl正規表現検索
 NeoBundle 'Shougo/vimproc'                    " 非同期処理
 NeoBundle 'Shougo/vimshell'                   " Vimからshellを扱う
+NeoBundle 'thinca/vim-ref'                    " リファレンス
+NeoBundle 'vim-scripts/sudo.vim'              " sudo権限によるファイル修正
+NeoBundle 'vim-scripts/YankRing.vim'          " Yank履歴管理
+NeoBundle 'vim-scripts/eregex.vim'            " Ruby・Perl正規表現検索
 NeoBundle 'Lokaltog/vim-powerline'            " ステータスライン
+NeoBundle 'scrooloose/nerdtree'               " エクスプローラ
+NeoBundle 'scrooloose/syntastic'              " シンタックスチェック
+NeoBundle 'scrooloose/nerdcommenter'          " コメント処理
+NeoBundle 'motemen/git-vim'                   " Git
+NeoBundle 'vim-scripts/vcscommand.vim'        " Subversion
+NeoBundle 'vim-scripts/grep.vim'              " Grep
+NeoBundle 'mattn/zencoding-vim'               " Zen-coding
+NeoBundle 'vim-ruby/vim-ruby'                 " Ruby
+NeoBundle 'rails.vim'                         " Rails
+NeoBundle 'pangloss/vim-javascript'           " JavaScript
+NeoBundle 'kchmck/vim-coffee-script'          " Coffeescript
+NeoBundle 'groenewege/vim-less'               " less
+" NeoBundle 'vim-scripts/javascript.vim'        " シンタックスハイライト JavaScript
 " NeoBundle 'minibufexpl.vim'                   " タブ管理
-" NeoBundle 'kchmck/vim-coffee-script'          " Coffee script
 " NeoBundle 'pekepeke/titanium-vim'             " Titanium
 
 " colorscheme
