@@ -11,6 +11,8 @@ if has("autocmd")
   autocmd FileType html       setlocal sw=4 sts=4 ts=4 et
   autocmd FileType java       setlocal sw=4 sts=4 ts=4 et
   autocmd FileType javascript setlocal sw=4 sts=4 ts=4 et
+  autocmd FileType json       setlocal sw=4 sts=4 ts=4 et
+  autocmd Filetype json       setl conceallevel=0
   autocmd FileType perl       setlocal sw=4 sts=4 ts=4 et
   autocmd FileType php        setlocal sw=4 sts=4 ts=4 et
   autocmd FileType python     setlocal sw=4 sts=4 ts=4 et
