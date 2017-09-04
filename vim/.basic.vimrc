@@ -1,6 +1,6 @@
 syntax on
 
-set number
+set number                        " 行番号表示
 set ttyfast
 set backspace=eol,indent,start    " <BackSpace>の挙動を修正
 set incsearch                     " インクリメンタルサーチ
@@ -11,15 +11,23 @@ set wildmode=longest,list,full    " ファイル名の保管順序
 set ambiwidth=double              " マルチバイト文字の挙動を制御
 set nobackup
 set noswapfile
+set cursorline                    " カーソルライン表示
 
 if has('conceal')
   set conceallevel=2 concealcursor=niv
 endif
 
-" Mouse
-set mouse=a
-set guioptions+=a
-set ttymouse=xterm2
+" マウス関連
+if has('mouse')
+    set mouse=a
+    if has('mouse_sgr')
+        set ttymouse=sgr
+    elseif v:version > 703 || v:version is 703 && has('patch632')
+        set ttymouse=sgr
+    else
+        set ttymouse=xterm2
+    endif
+endif
 
 " クリップボード
 set clipboard+=autoselect
@@ -45,11 +53,25 @@ nmap <C-L> <C-W>l
 nnoremap <C-Right> :bn<CR>
 nnoremap <C-Left> :bp<CR>
 
+" ハイライト関連
+nnoremap <silent><Esc><Esc> :<C-u>set nohlsearch!<CR>
+
 " タグ関連
 set tags=./tags;,tags;
 nnoremap <F3> :exe("tjump ".expand('<cword>'))<CR>
 " nnoremap <C-h> :vsp<CR> :exe("tjump ".expand('<cword>'))<CR>
 " nnoremap <C-k> :split<CR> :exe("tjump ".expand('<cword>'))<CR>
+
+" カーソル移動関連
+" 文字が折り返されている場合、表示行単位で移動するように
+nnoremap j gj
+nnoremap k gk
+nnoremap <Down> gj
+nnoremap <Up> gk
+
+" 括弧対応
+set showmatch                          " 括弧の対応関係を一瞬表示する
+source $VIMRUNTIME/macros/matchit.vim  " Vimの「%」を拡張する
 
 " DB設定
 let g:sql_type_default = 'mysql'

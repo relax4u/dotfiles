@@ -9,5 +9,5 @@ nmap <C-p> <Plug>(yankround-prev)
 nmap <C-n> <Plug>(yankround-next)
 
 " Uniteを利用して履歴を表示
-nnoremap <leader>y :<C-u>Unite yankround<CR>
+" nnoremap <leader>y :<C-u>Unite yankround<CR>
 

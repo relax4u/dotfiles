@@ -12,4 +12,4 @@ smap <expr><TAB> neosnippet#expandable_or_jumpable() ?
 " Enable snipMate compatibility feature.
 let g:neosnippet#enable_snipmate_compatibility = 1
 
-"let g:neosnippet#snippets_directory = "~/.vim/plugged/neosnippet-snippets/neosnippets/"
+let g:neosnippet#snippets_directory = "~/dotfiles/vim/plugins/neosnippet-snippets/snippets/"
