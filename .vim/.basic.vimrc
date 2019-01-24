@@ -76,3 +76,4 @@ source $VIMRUNTIME/macros/matchit.vim  " Vimの「%」を拡張する
 " DB設定
 let g:sql_type_default = 'mysql'
 
+

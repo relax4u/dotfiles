@@ -1,0 +1,63 @@
+##
+## ユーティリティ関連
+##
+## Shougo/unite.vim ファイル操作兼ランチャ
+## Shougo/neomru.vim unite プラグイン MRUコマンド
+## scrooloose/nerdtree エクスプローラー
+## Xuyuanp/nerdtree-git-plugin NERDTREEのプラグイン Gitのステータスの可視化
+## majutsushi/tagbar タブ処理
+## scrooloose/nerdcommenter コメント設定
+##
+[[plugins]]
+repo = 'Shougo/unite.vim'
+
+[[plugins]]
+repo = 'Shougo/neomru.vim'
+on_source = ['unite.vim']
+
+[[plugins]]
+repo = 'scrooloose/nerdtree'
+on_cmd = ['NERDTree']
+
+[[plugins]]
+repo = 'Xuyuanp/nerdtree-git-plugin'
+on_source = ['nerdtree']
+
+[[plugins]]
+repo = 'majutsushi/tagbar'
+on_cmd = ['Tagbar']
+
+[[plugins]]
+repo = 'scrooloose/nerdcommenter'
+on_cmd = ['NERDCommenter']
+
+
+##
+## オートコンプリート関連
+##
+## Shougo/deoplete.nvim オートコンプリート
+##
+repo = 'Shougo/neosnippet.vim'
+on_i  = 1
+on_ft = ['snippet']
+depends = ['neosnippet-snippets']
+hook_source = '''
+  source ~/dotfiles/.vim/plugins/.neosnippet.vimrc
+'''
+
+[[plugins]]
+repo = 'Shougo/deoplete.nvim'
+on_i = 1
+hook_source = '''
+  source ~/dotfiles/.vim/plugins/.deoplete.vimrc
+'''
+
+[[plugins]]
+repo = 'roxma/nvim-yarp'
+on_source = ['deoplete.nvim']
+
+[[plugins]]
+repo = 'roxma/vim-hug-neovim-rpc'
+on_source = ['deoplete.nvim']
+
+
