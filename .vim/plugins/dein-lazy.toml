@@ -61,3 +61,19 @@ repo = 'roxma/vim-hug-neovim-rpc'
 on_source = ['deoplete.nvim']
 
 
+###
+### プログラム関連
+###
+### lvht/phpcd.vim vendor/autoload.php を読み取って保管
+###
+[[plugins]]
+repo = 'lvht/phpcd.vim'
+on_i = 1
+on_ft = ['php']
+build = 'composer install'
+hook_source = '''
+  let g:phpcd_autoload_path = 'vendor/autoload.php'
+  let g:deoplete#ignore_sources = get(g:, 'deoplete#ignore_sources', {})
+  let g:deoplete#ignore_sources.php = ['phpcd', 'omni']
+'''
+
