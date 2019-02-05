@@ -64,8 +64,13 @@ on_source = ['deoplete.nvim']
 ###
 ### プログラム関連
 ###
+### digitaltoad/vim-pug のシンタックスハイライト
 ### lvht/phpcd.vim vendor/autoload.php を読み取って保管
 ###
+[[plugins]]
+repo ='digitaltoad/vim-pug'
+on_ft = ['pug']
+
 [[plugins]]
 repo = 'lvht/phpcd.vim'
 on_i = 1
