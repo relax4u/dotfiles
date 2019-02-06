@@ -31,12 +31,12 @@ repo = 'tpope/vim-fugitive'
 ##
 ## プログラム関連
 ##
-## scrooloose/syntastic シンタックスチェック
+## w0rp/ale シンタックスチェック
 ## nathanaelkane/vim-indent-guides インデント色づけ
 ## thinca/vim-ref リファレンス参照
 ##
 [[plugins]]
-repo = 'scrooloose/syntastic'
+repo = 'w0rp/ale'
 
 [[plugins]]
 # repo = 'Yggdroot/indentLine'

@@ -18,7 +18,8 @@ source ~/dotfiles/.vim/plugins/.yankround.vimrc
 source ~/dotfiles/.vim/plugins/.nerdtree.vimrc
 source ~/dotfiles/.vim/plugins/.nerdtree-git-plugin.vimrc
 source ~/dotfiles/.vim/plugins/.tagbar.vimrc
-source ~/dotfiles/.vim/plugins/.syntastic.vimrc
+" source ~/dotfiles/.vim/plugins/.syntastic.vimrc
+source ~/dotfiles/.vim/plugins/.ale.vimrc
 source ~/dotfiles/.vim/plugins/.nerdcommenter.vimrc
 source ~/dotfiles/.vim/plugins/.indent-guides.vimrc
 
