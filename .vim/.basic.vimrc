@@ -11,6 +11,7 @@ set wildmode=longest,list,full    " ファイル名の保管順序
 set ambiwidth=double              " マルチバイト文字の挙動を制御
 set nobackup
 set noswapfile
+set autoindent
 set cursorline                    " カーソルライン表示
 
 if has('conceal')

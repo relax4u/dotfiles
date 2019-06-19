@@ -4,6 +4,9 @@
 [[plugins]]
 repo = 'altercation/vim-colors-solarized'
 
+#[[plugins]]
+#repo = 'ryanoasis/vim-devicons'
+
 
 ##
 ## ステータスバー関連
@@ -26,6 +29,13 @@ repo = 'leafcage/yankround.vim'
 
 [[plugins]]
 repo = 'tpope/vim-fugitive'
+
+[[plugins]]
+repo = 'scrooloose/nerdtree'
+
+[[plugins]]
+repo = 'Xuyuanp/nerdtree-git-plugin'
+on_source = ['nerdtree']
 
 
 ##

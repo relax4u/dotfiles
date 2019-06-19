@@ -1,4 +1,5 @@
 set nocompatible
+set encoding=UTF-8
 
 " プラグイン管理
 source ~/dotfiles/.vim/.bundle.vimrc
@@ -18,12 +19,12 @@ source ~/dotfiles/.vim/plugins/.yankround.vimrc
 source ~/dotfiles/.vim/plugins/.nerdtree.vimrc
 source ~/dotfiles/.vim/plugins/.nerdtree-git-plugin.vimrc
 source ~/dotfiles/.vim/plugins/.tagbar.vimrc
-" source ~/dotfiles/.vim/plugins/.syntastic.vimrc
 source ~/dotfiles/.vim/plugins/.ale.vimrc
 source ~/dotfiles/.vim/plugins/.nerdcommenter.vimrc
 source ~/dotfiles/.vim/plugins/.indent-guides.vimrc
 
 " 廃止したプラグインの設定
+" source ~/dotfiles/.vim/plugins/.syntastic.vimrc
 " source ~/dotfiles/vim/plugins/.ctrlp.vimrc
 " source ~/dotfiles/vim/plugins/.watchdogs.vimrc
 "source ~/dotfiles/vim/plugins/.emmet.vimrc

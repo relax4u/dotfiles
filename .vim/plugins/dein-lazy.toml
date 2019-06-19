@@ -16,14 +16,6 @@ repo = 'Shougo/neomru.vim'
 on_source = ['unite.vim']
 
 [[plugins]]
-repo = 'scrooloose/nerdtree'
-on_cmd = ['NERDTree']
-
-[[plugins]]
-repo = 'Xuyuanp/nerdtree-git-plugin'
-on_source = ['nerdtree']
-
-[[plugins]]
 repo = 'majutsushi/tagbar'
 on_cmd = ['Tagbar']
 
@@ -73,7 +65,6 @@ on_ft = ['pug']
 
 [[plugins]]
 repo = 'lvht/phpcd.vim'
-on_i = 1
 on_ft = ['php']
 build = 'composer install'
 hook_source = '''
